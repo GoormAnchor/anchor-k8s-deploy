@@ -17,8 +17,8 @@ spec:
         - name: anchor-book-be
           image: 438282170065.dkr.ecr.ap-northeast-2.amazonaws.com/anchor-book-be:latest
           imagePullPolicy: Always
-          #ports:
-          #  - containerPort: 9090
+          ports:
+            - containerPort: 9090
           #livenessProbe:
           #  httpGet:
           #    port: 9090
