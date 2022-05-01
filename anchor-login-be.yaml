@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: anchor-login-be
-          image: 438282170065.dkr.ecr.ap-northeast-2.amazonaws.com/anchor-login-be:latest
+          image: 438282170065.dkr.ecr.ap-northeast-2.amazonaws.com/anchor-login-be:3
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
