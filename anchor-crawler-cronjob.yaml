@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: anchor-crawler
+spec:
+  schedule: "* */1 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: anchor-crawler
+            image: 438282170065.dkr.ecr.ap-northeast-2.amazonaws.com/anchor-crawler
+            imagePullPolicy: IfNotPresent
+          restartPolicy: OnFailure
