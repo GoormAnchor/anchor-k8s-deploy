@@ -10,6 +10,6 @@ spec:
         spec:
           containers:
           - name: anchor-crawler
-            image: 438282170065.dkr.ecr.ap-northeast-2.amazonaws.com/anchor-crawler
+            image: 438282170065.dkr.ecr.ap-northeast-2.amazonaws.com/anchor-crawler:1.0
             imagePullPolicy: IfNotPresent
           restartPolicy: OnFailure
