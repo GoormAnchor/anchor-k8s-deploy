@@ -11,7 +11,7 @@ metadata:
     #alb.ingress.kubernetes.io/ssl-redirect: '443'
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-  finalizers: []
+  #finalizers: []
 spec:
   rules:
   #- host: anchorcomics.net
