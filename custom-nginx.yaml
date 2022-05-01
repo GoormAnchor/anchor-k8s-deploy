@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: custom-nginx
-          image: 438282170065.dkr.ecr.ap-northeast-2.amazonaws.com/custom-nginx:latest
+          image: 438282170065.dkr.ecr.ap-northeast-2.amazonaws.com/custom-nginx:40
           imagePullPolicy: Always
           ports:
             - containerPort: 80
