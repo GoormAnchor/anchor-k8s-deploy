@@ -4,7 +4,7 @@ metadata:
   name: anchor-crawler
   namespace: default
 spec:
-  schedule: "* */1 * * *"
+  schedule: "0 * * * *"
   jobTemplate:
     spec:
       template:
@@ -13,4 +13,4 @@ spec:
           - name: anchor-crawler
             image: 438282170065.dkr.ecr.ap-northeast-2.amazonaws.com/anchor-crawler:1.0
             imagePullPolicy: IfNotPresent
-          restartPolicy: OnFailure
+          restartPolicy: Never
